@@ -37,14 +37,11 @@ body {
 
 
 .navbar img {
-   .navbar img {
     max-height: 80px;
     max-width: 150px;
     width: auto;
     height: auto;
     object-fit: contain;
-}
-
 }
 
 .navbar ul {
@@ -63,8 +60,15 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #279bc6;
+    color: #22a8d8;
     text-decoration: underline;
+}
+
+.navbar ul li a.active {
+    color: #22a8d8;
+    text-decoration: underline;
+    border-bottom: 3px solid #22a8d8;
+    padding-bottom: 5px;
 }
 
 .navbar .btn {
@@ -83,27 +87,37 @@ body {
 }
 
 
-.hero {
+.home-hero {
+    background-image: url(/images/huai-mae-khamin-waterfall-level-6-khuean-srinagarindra-national-park-kanchanaburi-thailand.jpg );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    height: 80vh;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin: 20px;
     text-align: center;
-    color: black;
+    color: rgb(247, 244, 244);
     padding: 50px 20px;
     max-width: 900px;
     margin: 0 auto; 
 }
 
-.hero h1 {
+.home-hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: bolder;
 }
 
-.hero p {
+.home-hero p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
 
-.hero button {
+.home-hero button {
     padding: 15px 30px;
     background-color: #279bc6;
     color: white;
@@ -268,9 +282,24 @@ footer {
 }
 /* Problems Page Specific Styles */
 .problems-hero {
+     background-image: url(/images/248.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    height: 60vh;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 80px 20px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     margin: 20px;
     border-radius: 20px;
@@ -286,10 +315,10 @@ footer {
 }
 
 .hero-content p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     max-width: 800px;
     margin: 0 auto;
-    color: #000000;
+    color: #fbfafa;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
 
@@ -468,12 +497,7 @@ footer {
     background: linear-gradient(135deg, #1e97c2, #5cc9f0);
 }
 
-/* Active Nav Link */
-.navbar ul li a.active {
-    color: #279bc6;
-    background: rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-}
+
 
 /* Responsive Design for Problems Page */
 @media (max-width: 992px) {
@@ -502,6 +526,48 @@ footer {
     .section-header h2 {
         font-size: 2rem;
     }
+}
+.solutions-hero{
+    background-image: url(/images/119644.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    height: 60vh;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    color: rgb(7, 7, 7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+.solutions-hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.solutions-hero p {
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.solutions-hero button {
+    padding: 12px 25px;
+    background: #22a8d8;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px; /* ensures space under paragraph */
+}
+.solutions-hero button:hover {
+    background: #69d5fc;
 }
 /* SOLUTIONS IMAGE GRID */
 .solutions-gallery {
